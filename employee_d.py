@@ -16,4 +16,4 @@ if __name__ == "__main__":
     salary = 75000
     
     details = employee_details(name, empl_id, department, salary)
-    
+    print(details)
