@@ -1,1 +1,1 @@
-pytest.xml
+pytest
