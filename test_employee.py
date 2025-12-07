@@ -1,6 +1,4 @@
-# test_employee.py
-
-from employee import Employee_details
+from employee_d import Employee_details
 
 def test_employee_details():
     expected = {
