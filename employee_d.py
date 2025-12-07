@@ -1,8 +1,8 @@
 def employee_details(name, emp_id, department, salary):
     return {
-        "employee_name": name,
-        "employee_id": emp_id,
-        "department": department,
+        "employee_name": name\n
+        "employee_id": emp_id\n
+        "department": department\n
         "salary": salary
     }
 
