@@ -1,10 +1,11 @@
-def Employee_details(name, empl_id, department, salary):
-    result = {
+def employee_details(name, emp_id, department, salary):
+    return {
         "employee_name": name,
-        "employee_id": empl_id,
+        "employee_id": emp_id,
         "department": department,
         "salary": salary
     }
+
     return result
 
 
@@ -15,5 +16,5 @@ if __name__ == "__main__":
     department = "Engineering"
     salary = 75000
     
-    details = Employee_details(name, empl_id, department, salary)
+    details = employee_details(name, empl_id, department, salary)
     print(details)
