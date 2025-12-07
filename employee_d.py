@@ -1,14 +1,30 @@
-details = employee_details("John Doe", "E12345", "Engineering", 75000)
+# Function definition
+def employee_details(name, emp_id, department, salary):
+    return {
+        "employee_name": name,
+        "employee_id": emp_id,
+        "department": department,
+        "salary": salary
+    }
 
-# Option 1: Using a loop
-for key, value in details.items():
-    print(f"{key}: {value}")  # Each print already adds a newline automatically
+# Run only when this file is executed directly
+if __name__ == "__main__":
+    # Sample input
+    name = "John Doe"
+    emp_id = "E12345"
+    department = "Engineering"
+    salary = 75000
 
-# Option 2: Using a single print with \n
-output = (
-    f"employee_name: {details['employee_name']}\n"
-    f"employee_id: {details['employee_id']}\n"
-    f"department: {details['department']}\n"
-    f"salary: {details['salary']}"
-)
-print(output)
+    # Get the details dictionary
+    details = employee_details(name, emp_id, department, salary)
+
+    # Combine all fields into one string with \n
+    output = (
+        f"employee_name: {details['employee_name']}\n"
+        f"employee_id: {details['employee_id']}\n"
+        f"department: {details['department']}\n"
+        f"salary: {details['salary']}"
+    )
+
+    # Print the final output
+    print(output)
