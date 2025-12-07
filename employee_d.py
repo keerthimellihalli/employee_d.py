@@ -1,17 +1,14 @@
-def employee_details(name, emp_id, department, salary):
-    return {
-        "employee_name": name,
-        "employee_id": emp_id,
-        "department": department,
-        "salary": salary
-    }
+details = employee_details("John Doe", "E12345", "Engineering", 75000)
 
-if __name__ == "__main__":
-    # Sample input (indented inside main)
-    name = "John Doe"
-    empl_id = "E12345"
-    department = "Engineering"
-    salary = 75000
+# Option 1: Using a loop
+for key, value in details.items():
+    print(f"{key}: {value}")  # Each print already adds a newline automatically
 
-    details = employee_details(name, empl_id, department, salary)
-    print(details)
+# Option 2: Using a single print with \n
+output = (
+    f"employee_name: {details['employee_name']}\n"
+    f"employee_id: {details['employee_id']}\n"
+    f"department: {details['department']}\n"
+    f"salary: {details['salary']}"
+)
+print(output)
